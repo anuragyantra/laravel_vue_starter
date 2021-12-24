@@ -101,9 +101,7 @@
         methods: {
 
           loadCategories(){
-            // if(this.$gate.isAdmin()){
               axios.get("api/category").then(({ data }) => (this.categories = data.data));
-            // }
           },
           
           createCategory(){

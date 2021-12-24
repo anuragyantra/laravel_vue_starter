@@ -159,10 +159,7 @@
               this.$Progress.finish();
           },
           loadProducts(){
-
-            // if(this.$gate.isAdmin()){
               axios.get("api/product").then(({ data }) => (this.products = data.data));
-            // }
           },
           loadCategories(){
               axios.get("/api/category/list").then(({ data }) => (this.categories = data.data));
